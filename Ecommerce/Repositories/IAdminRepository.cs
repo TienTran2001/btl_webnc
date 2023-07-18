@@ -7,5 +7,6 @@ namespace Ecommerce.Repositories
   {
     Task<List<User>> AdminGetListUsersAsync();
     Task<object> AdminAddUser(RegistrationViewModel model);
+    Task<object> AdminDeleteUser(string id);
   }
 }

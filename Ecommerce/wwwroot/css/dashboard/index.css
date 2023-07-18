@@ -115,20 +115,25 @@ a {
   margin-top: 80px;
 }
 
+.side-item {
+  padding: 0 15px;
+}
 .side-item a {
   display: block;
-  padding: 10px 30px;
+  padding: 20px 30px;
   color: #99abb4;
   font-weight: 600;
   cursor: pointer;
+  background: #fff;
+  border-radius: 10px;
 }
 
 .side-item a:hover {
-  color: white;
+  color: #313644;
   transition: 0.5s linear;
 }
 
-.btn {
+.dashboard-container-btn {
   display: flex;
   justify-content: flex-end;
 }
@@ -164,12 +169,13 @@ table tbody tr td {
 table tbody tr .action {
   display: flex;
 }
-table tbody tr .action button {
+table tbody tr .action a {
   margin-right: 10px;
   cursor: pointer;
   background-color: #f3f3f5;
   border: none;
   padding: 5px 10px;
+  color: #000;
   border-radius: 2px;
 }
 table tbody tr .action button:last-child {
@@ -219,3 +225,52 @@ table tbody tr .action button:last-child {
     right: 10px;
   }
 }
+
+/* Popup delete */
+.confirmation-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.confirmation-popup.show {
+  display: block;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #464e62;
+  color: #fff;
+  border-radius: 10px;
+}
+.confirmation-popup p {
+  margin: 20px 0 40px;
+}
+
+.confirmation-popup-action {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0 10px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlay.show {
+  display: block;
+}
+
+/* end popup */

@@ -40,6 +40,12 @@ namespace Ecommerce.Controllers
       return RedirectToAction("Display", "Dashboard");
     }
 
+    [Authorize(Roles = "admin")]
+    public async Task<IActionResult> DeleteUser(string id)
+    {
+      var result = await _adminRepository.AdminDeleteUser(id);
+      return Ok(result);
+    }
 
   }
 }

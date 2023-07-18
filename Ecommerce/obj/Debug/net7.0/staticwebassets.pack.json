@@ -93,6 +93,10 @@
       "PackagePath": "staticwebassets\\fonts\\icomoon\\style.css"
     },
     {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\js\\deleteUser.js",
+      "PackagePath": "staticwebassets\\js\\deleteUser.js"
+    },
+    {
       "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

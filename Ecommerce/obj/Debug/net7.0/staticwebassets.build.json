@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AjRishEeAJWHiuveeEqGKk3UfsT1rLi2XzkXMGECtAE=",
+  "Hash": "vlDtuqrCvfwoO7iELVnDBNgQDHX0P5M11tVWbjyTOZQ=",
   "Source": "Ecommerce",
   "BasePath": "_content/Ecommerce",
   "Mode": "Default",
@@ -423,6 +423,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fonts\\icomoon\\style.css"
+    },
+    {
+      "Identity": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\js\\deleteUser.js",
+      "SourceId": "Ecommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\",
+      "BasePath": "_content/Ecommerce",
+      "RelativePath": "js/deleteUser.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\deleteUser.js"
     },
     {
       "Identity": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\js\\site.js",

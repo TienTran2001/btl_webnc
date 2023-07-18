@@ -82,5 +82,39 @@ namespace Ecommerce.Repositories
         NewUser = user
       };
     }
+
+
+    public async Task<object> AdminDeleteUser (string id)
+    {
+      var user = await _userManager.FindByIdAsync(id);
+
+      if (user != null)
+      {
+        var result = await _userManager.DeleteAsync(user);
+
+        if (result.Succeeded)
+        {
+          // Xóa thành công
+          return new
+          {
+            StatusCode = 1,
+            Message = "Deleted user successfuly!!"
+          };
+        }
+
+        return new
+        {
+          StatusCode = 0,
+          Message = "Deleted user fail!!"
+        };
+      }
+      return new
+      {
+        StatusCode = 0,
+        Message = "User does not exist!!"
+      };
+    }
+
+
   }
 }

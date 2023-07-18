@@ -9,61 +9,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Ecommerce
 build_property.RootNamespace = Ecommerce
-build_property.ProjectDir = e:\Workspace\MVCProject\Ecommerce\Ecommerce\
+build_property.ProjectDir = E:\Workspace\MVCProject\Ecommerce\Ecommerce\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = e:\Workspace\MVCProject\Ecommerce\Ecommerce
+build_property.MSBuildProjectDirectory = E:\Workspace\MVCProject\Ecommerce\Ecommerce
 build_property._RazorSourceGeneratorDebug = 
 
-[e:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/Admin/AddUser.cshtml]
+[E:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/Admin/AddUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkVXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/Admin/Display.cshtml]
+[E:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/Admin/Display.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGlzcGxheS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/Dashboard/Display.cshtml]
+[E:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/Dashboard/Display.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXERpc3BsYXkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/Home/Index.cshtml]
+[E:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/Home/Privacy.cshtml]
+[E:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/Shared/Error.cshtml]
+[E:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/Shared/_AdminLayout.cshtml]
+[E:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/User/Login.cshtml]
+[E:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/User/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/User/Registration.cshtml]
+[E:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/User/Registration.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3RyYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/_ViewImports.cshtml]
+[E:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/_ViewStart.cshtml]
+[E:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/Shared/_Layout.cshtml]
+[E:/Workspace/MVCProject/Ecommerce/Ecommerce/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-jnmo08unka

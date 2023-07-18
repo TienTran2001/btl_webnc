@@ -4,7 +4,7 @@
 }
 
 <h2 class="dashboard-heading">User List</h2>      
-<div class="btn">
+<div class="dashboard-container-btn">
     <a class="dasboard-btn-create" href="/admin/adduser">
        <i class="bi bi-plus"></i> <span>Create User</span>
     </a>
@@ -12,3 +12,11 @@
 <section class="" id='userList'>
                    
 </section>
+<div class="overlay"></div>
+<div id="confirmationPopup" class="confirmation-popup">
+  <p>Are you sure you want to delete this user?</p>
+  <div class="confirmation-popup-action">
+    <button id="confirmDelete" class="btn btn-danger">Confirm</button>
+    <button id="cancelDelete" class="btn">Cancel</button>
+  </div>
+</div>
