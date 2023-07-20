@@ -1,5 +1,6 @@
 ﻿using Ecommerce.Models;
 using Ecommerce.ViewModels;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -112,6 +113,59 @@ namespace Ecommerce.Repositories
       {
         StatusCode = 0,
         Message = "User does not exist!!"
+      };
+    }
+
+    public async Task<object> AdminGetUserById(string id)
+    {
+      var user = await _userManager.FindByIdAsync(id);
+
+      if (user == null)
+      {
+        return new
+        {
+          StatusCode = 0,
+          Message = "User not found!"
+        };
+      }
+      return new
+      {
+        StatusCode = 1,
+        User = user
+      };
+    }
+
+    public async Task<object> AdminUpdateUser(string id, string firstName, string lastName, string email, string username)
+    {
+      var user = await _userManager.FindByIdAsync(id);
+      if (user == null)
+      {
+        return new
+        {
+          StatusCode = 0,
+          Message = "User not found"
+        };
+      }
+
+      // Cập nhật thông tin mới
+      user.FirstName = firstName;
+      user.LastName = lastName;
+      user.Email = email;
+      user.UserName = username;
+
+      // Lưu cập nhật vào cơ sở dữ liệu
+      var result = await _userManager.UpdateAsync(user);
+      if (!result.Succeeded)
+      {
+        return new {
+          StatusCode = 0,
+          Message = "Upfated User fail"
+        };
+      }
+      return new
+      {
+        StatusCode = 1,
+        User = user
       };
     }
 

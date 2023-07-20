@@ -28,7 +28,9 @@ function loadListUser() {
           <td> <span class='res-head'>${user.lastName}</span></td>
           <td> <span class='res-head'>${user.email}</span></td>
           <td class='action'>
-            <a href="/Admin/UpdateUser">Edit</a>
+            <button class="btn-update-user" data-user-id=${
+              user.id
+            } ><i class="bi bi-pencil"></i> Edit</button>
             <button class="btn-delete-user" data-user-id=${
               user.id
             }><i class="bi bi-trash"></i> Delete</button>
@@ -40,11 +42,13 @@ function loadListUser() {
       let userList = document.getElementById('userList');
       userList.innerHTML = userListHtml;
       handleDeleteUser();
+      handleUpdateUser();
     } else if (xhr.readyState === 4) {
     }
   };
   xhr.send();
 }
+
 function handleDeleteUser() {
   const btnDeleteUsers = document.querySelectorAll('.btn-delete-user');
   const overlay = document.querySelector('.overlay');
@@ -78,7 +82,6 @@ function handleDeleteUser() {
             // Xử lý lỗi
           },
         });
-        // handle delete
       };
     };
   });
@@ -89,51 +92,81 @@ function handleDeleteUser() {
   };
 }
 
-function load() {
-  $.ajax({
-    url: '/admin/GetAllUser',
-    type: 'GET',
-    dataType: 'json',
-    success: function (users) {
-      let userListHtml = `
-      <table class='table'>
-        <thead class='table-display'>
-          <tr>
-            <th>Id</th>
-            <th>Username</th>
-            <th>Lastname</th>
-            <th>Firstname</th>
-            <th>Email</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-      `;
-      users.forEach(function (user, index) {
-        userListHtml += `
-        <tr>
-          <td  scope='row'> <span class='res-head'>${index + 1}</span></td>
-          <td> <span class='res-head'>${user.userName}</span></td>
-          <td> <span class='res-head'>${user.firstName}</span></td>
-          <td> <span class='res-head'>${user.lastName}</span></td>
-          <td> <span class='res-head'>${user.email}</span></td>
-          <td class='action'>
-            <a href="/Admin/UpdateUser">Edit</a>
-            <button class="btn-delete-user" data-user-id=${
-              user.id
-            }><i class="bi bi-trash"></i> Delete</button>
-          </td>
-        </tr>
-      `;
-      });
-      userListHtml += '</tbody>' + '</table>';
-      let userList = document.getElementById('userList');
-      userList.innerHTML = userListHtml;
-    },
-    error: function () {
-      alert('Failed to get user list.');
-    },
+function handleUpdateUser() {
+  const btnEdits = document.querySelectorAll('.btn-update-user');
+  const popupEditUser = document.querySelector('.popup-edit-user');
+  const overlay = document.querySelector('.overlay');
+  const cancelBtn = document.getElementById('cancelUpdate');
+
+  const firstName = document.querySelector('.update-first-name');
+  const lastName = document.querySelector('.update-last-name');
+  const email = document.querySelector('.update-email');
+  const username = document.querySelector('.update-username');
+  const confirmUpdate = document.querySelector('#confirmUpdate');
+
+  console.log(overlay);
+
+  btnEdits.forEach((item) => {
+    item.onclick = () => {
+      popupEditUser.classList.add('show');
+      overlay.classList.add('show');
+
+      const userId = item.getAttribute('data-user-id');
+      console.log(userId);
+      let xhr = new XMLHttpRequest();
+      xhr.open('GET', `/admin/FindUserById?id=${userId}`, true);
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          let result = JSON.parse(xhr.responseText);
+          console.log(result);
+          if (result.statusCode == 1) {
+            firstName.value = result.user.firstName;
+            lastName.value = result.user.lastName;
+            email.value = result.user.email;
+            username.value = result.user.userName;
+
+            confirmUpdate.onclick = () => {
+              $.ajax({
+                url: '/Admin/UpdateUser',
+                type: 'POST',
+                data: {
+                  id: result.user.id,
+                  firstName: firstName.value,
+                  lastName: lastName.value,
+                  email: email.value,
+                  username: username.value,
+                },
+                success: function (result) {
+                  // Xử lý thành công
+                  console.log(result);
+                  if (result.statusCode == 1) {
+                    alert('Sửa thành công!!!');
+                    cancelBtn.click();
+                    console.log(cancelBtn);
+                    loadListUser();
+                  } else {
+                    alert(result.message);
+                  }
+                },
+                error: function () {
+                  // Xử lý lỗi
+                },
+              });
+            };
+          }
+        } else if (xhr.readyState === 4) {
+          console.log('err');
+        }
+      };
+      xhr.send();
+    };
   });
+
+  cancelBtn.onclick = () => {
+    popupEditUser.classList.remove('show');
+    overlay.classList.remove('show');
+  };
 }
 
 function app() {

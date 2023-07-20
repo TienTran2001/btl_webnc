@@ -2,9 +2,11 @@
 using Ecommerce.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Reflection.Metadata.Ecma335;
 
 namespace Ecommerce.Controllers
 {
+  [Authorize(Roles = "admin")]
   public class AdminController : Controller
   {
 
@@ -14,13 +16,13 @@ namespace Ecommerce.Controllers
       _adminRepository = adminRepository;
     }
 
-    [Authorize(Roles = "admin")]
+    
     public IActionResult Display()
     {
       return View();
     }
 
-    [Authorize(Roles = "admin")]
+    
     [HttpGet]
     public async Task<IActionResult> GetAllUser()
     {
@@ -28,7 +30,7 @@ namespace Ecommerce.Controllers
       return Ok(users);
     }
 
-    [Authorize(Roles = "admin")]
+   
     public async Task<IActionResult> AddUser(RegistrationViewModel model)
     {
      
@@ -40,10 +42,24 @@ namespace Ecommerce.Controllers
       return RedirectToAction("Display", "Dashboard");
     }
 
-    [Authorize(Roles = "admin")]
+   
     public async Task<IActionResult> DeleteUser(string id)
     {
       var result = await _adminRepository.AdminDeleteUser(id);
+      return Ok(result);
+    }
+
+    
+    public async Task<IActionResult> FindUserById(string id)
+    {
+      var result = await _adminRepository.AdminGetUserById(id);
+      return Ok(result);
+    }
+
+    public async Task<IActionResult> UpdateUser(string id, string firstName, string lastName, string email, string username)
+    {
+      var result = await _adminRepository.AdminUpdateUser(id, firstName, lastName, email, username);
+      
       return Ok(result);
     }
 

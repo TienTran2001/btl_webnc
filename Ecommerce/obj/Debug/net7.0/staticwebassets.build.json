@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vlDtuqrCvfwoO7iELVnDBNgQDHX0P5M11tVWbjyTOZQ=",
+  "Hash": "czCf3Gu4GzbN64zUHpTjfW4jHuyaqLLChGpHAJWfn6w=",
   "Source": "Ecommerce",
   "BasePath": "_content/Ecommerce",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\aos.css"
+    },
+    {
+      "Identity": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\css\\base\\reset.css",
+      "SourceId": "Ecommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\",
+      "BasePath": "_content/Ecommerce",
+      "RelativePath": "css/base/reset.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\base\\reset.css"
     },
     {
       "Identity": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\css\\bootstrap.min.css",
@@ -151,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\jquery-ui.css"
+    },
+    {
+      "Identity": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\css\\login\\index.css",
+      "SourceId": "Ecommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\",
+      "BasePath": "_content/Ecommerce",
+      "RelativePath": "css/login/index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\login\\index.css"
     },
     {
       "Identity": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\css\\magnific-popup.css",

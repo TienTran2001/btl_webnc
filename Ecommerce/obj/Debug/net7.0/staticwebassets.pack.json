@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\aos.css"
     },
     {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\css\\base\\reset.css",
+      "PackagePath": "staticwebassets\\css\\base\\reset.css"
+    },
+    {
       "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
@@ -27,6 +31,10 @@
     {
       "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\css\\jquery-ui.css",
       "PackagePath": "staticwebassets\\css\\jquery-ui.css"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\css\\login\\index.css",
+      "PackagePath": "staticwebassets\\css\\login\\index.css"
     },
     {
       "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\css\\magnific-popup.css",

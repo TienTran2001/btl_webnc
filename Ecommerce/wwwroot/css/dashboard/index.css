@@ -169,7 +169,7 @@ table tbody tr td {
 table tbody tr .action {
   display: flex;
 }
-table tbody tr .action a {
+table tbody tr .action button {
   margin-right: 10px;
   cursor: pointer;
   background-color: #f3f3f5;
@@ -227,6 +227,7 @@ table tbody tr .action button:last-child {
 }
 
 /* Popup delete */
+.popup-edit-user,
 .confirmation-popup {
   display: none;
   position: fixed;
@@ -239,6 +240,7 @@ table tbody tr .action button:last-child {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+.popup-edit-user.show,
 .confirmation-popup.show {
   display: block;
 }

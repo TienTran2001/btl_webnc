@@ -8,5 +8,7 @@ namespace Ecommerce.Repositories
     Task<List<User>> AdminGetListUsersAsync();
     Task<object> AdminAddUser(RegistrationViewModel model);
     Task<object> AdminDeleteUser(string id);
+    Task<object> AdminGetUserById(string id);
+    Task<object> AdminUpdateUser(string id, string firstName, string lastName, string email, string username);
   }
 }

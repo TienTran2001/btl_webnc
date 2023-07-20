@@ -45,8 +45,6 @@ namespace Ecommerce.Controllers
 
     }
 
-    [HttpPost]
-
     public IActionResult Registration()
     {
       return View();
