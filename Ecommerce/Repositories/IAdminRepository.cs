@@ -10,5 +10,6 @@ namespace Ecommerce.Repositories
     Task<object> AdminDeleteUser(string id);
     Task<object> AdminGetUserById(string id);
     Task<object> AdminUpdateUser(string id, string firstName, string lastName, string email, string username);
+    Task<object> AdminSearchUserByUsername(string username);
   }
 }

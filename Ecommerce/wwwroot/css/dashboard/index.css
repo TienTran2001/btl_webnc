@@ -276,3 +276,19 @@ table tbody tr .action button:last-child {
 }
 
 /* end popup */
+
+.input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+/* search */
+.search {
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 10px;
+}

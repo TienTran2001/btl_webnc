@@ -64,7 +64,7 @@ function handleDeleteUser() {
       confirmDelete.onclick = () => {
         $.ajax({
           url: '/Admin/DeleteUser',
-          type: 'POST',
+          type: 'DELETE',
           data: { id: userId },
           success: function (result) {
             // Xử lý thành công
@@ -114,7 +114,7 @@ function handleUpdateUser() {
       const userId = item.getAttribute('data-user-id');
       console.log(userId);
       let xhr = new XMLHttpRequest();
-      xhr.open('GET', `/admin/FindUserById?id=${userId}`, true);
+      xhr.open('PUT', `/admin/FindUserById?id=${userId}`, true);
       xhr.setRequestHeader('Content-Type', 'application/json');
       xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
@@ -169,9 +169,83 @@ function handleUpdateUser() {
   };
 }
 
+// search
+function handleSearchUser() {
+  const searchInput = document.querySelector('.search');
+  let debounceTimeout;
+
+  searchInput.addEventListener('input', function () {
+    // Hủy bỏ timeout trước đó (nếu có)
+    clearTimeout(debounceTimeout);
+
+    // Đặt timeout mới để gọi hàm search sau 500ms
+    debounceTimeout = setTimeout(function () {
+      const searchTerm = searchInput.value.trim();
+      if (searchTerm == '') {
+        loadListUser();
+      } else {
+        searchUsersByUsername(searchTerm);
+      }
+    }, 500);
+  });
+}
+
+function searchUsersByUsername(searchTerm) {
+  let xhr = new XMLHttpRequest();
+  xhr.open('GET', `/Admin/SearchUser?username=${searchTerm}`, true);
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      let data = JSON.parse(xhr.responseText);
+      const { users } = data;
+      let userListHtml = `
+      <table class='table' id='#userTable'>
+        <thead class='table-display'>
+          <tr>
+            <th>Id</th>
+            <th>Username</th>
+            <th>Lastname</th>
+            <th>Firstname</th>
+            <th>Email</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+      `;
+      users.forEach(function (user, index) {
+        userListHtml += `
+        <tr>
+          <td  scope='row'> <span class='res-head'>${index + 1}</span></td>
+          <td> <span class='res-head'>${user.userName}</span></td>
+          <td> <span class='res-head'>${user.firstName}</span></td>
+          <td> <span class='res-head'>${user.lastName}</span></td>
+          <td> <span class='res-head'>${user.email}</span></td>
+          <td class='action'>
+            <button class="btn-update-user" data-user-id=${
+              user.id
+            } ><i class="bi bi-pencil"></i> Edit</button>
+            <button class="btn-delete-user" data-user-id=${
+              user.id
+            }><i class="bi bi-trash"></i> Delete</button>
+          </td>
+        </tr>
+      `;
+      });
+      userListHtml += '</tbody>' + '</table>';
+      let userList = document.getElementById('userList');
+      userList.innerHTML = userListHtml;
+      handleDeleteUser();
+      handleUpdateUser();
+    } else if (xhr.readyState === 4) {
+    }
+  };
+  xhr.send();
+}
+
 function app() {
   $(document).ready(function () {
     loadListUser();
+    handleSearchUser();
   });
 }
 

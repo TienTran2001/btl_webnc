@@ -169,6 +169,27 @@ namespace Ecommerce.Repositories
       };
     }
 
+    /* Search User by username */
+    public async Task<object> AdminSearchUserByUsername(string username)
+    {
+      var users = _userManager.Users
+            .Where(u => u.UserName.Contains(username))
+            .ToList();
+      if (users == null)
+      {
+        return new
+        {
+          StatusCode = 0,
+          Message = "Upfated User fail" 
+        };
+      }
+
+      return new
+      {
+        StatusCode = 1,
+        users
+      };
+    }
 
   }
 }

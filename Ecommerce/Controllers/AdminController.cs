@@ -63,5 +63,11 @@ namespace Ecommerce.Controllers
       return Ok(result);
     }
 
+    public async Task<IActionResult> SearchUser(string username)
+    {
+      var result = await _adminRepository.AdminSearchUserByUsername(username);
+      return Ok(result);
+    }
+
   }
 }
