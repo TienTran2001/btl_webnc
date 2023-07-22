@@ -345,6 +345,22 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\uploads\\26ba3ab0-ff85-401e-996d-5975105f14db.jpg",
+      "PackagePath": "staticwebassets\\uploads\\26ba3ab0-ff85-401e-996d-5975105f14db.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\uploads\\296f3264-7191-469d-a039-e0632cda5599.jpg",
+      "PackagePath": "staticwebassets\\uploads\\296f3264-7191-469d-a039-e0632cda5599.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\uploads\\2aeb8f94-00fa-487e-a4e0-1bbb260eff20.jpg",
+      "PackagePath": "staticwebassets\\uploads\\2aeb8f94-00fa-487e-a4e0-1bbb260eff20.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\uploads\\c1d57ddc-99d9-4a49-a2f1-960ed8a8661c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\c1d57ddc-99d9-4a49-a2f1-960ed8a8661c.jpg"
+    },
+    {
       "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\uploads\\f7feb551-ce25-4735-938d-23e2eccb1918.jpg",
       "PackagePath": "staticwebassets\\uploads\\f7feb551-ce25-4735-938d-23e2eccb1918.jpg"
     },

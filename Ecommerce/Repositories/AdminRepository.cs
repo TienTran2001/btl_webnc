@@ -307,6 +307,31 @@ namespace Ecommerce.Repositories
     }
 
 
+    public async Task<object> AdminDeleteProduct(int id)
+    {
+      //var user = await _userManager.FindByIdAsync(id);
+      var product = _context.Products.FirstOrDefault(p => p.Id == id);
+
+      if (product == null)
+      {
+          return new
+        {
+          success = false,
+          message = "User not found!!"
+        };
+      }
+
+      var result = _context.Products.Remove(product);
+      await _context.SaveChangesAsync();
+      // Xóa thành công
+      return new
+      {
+        success = 1,
+        message = "Deleted product successfuly!!"
+      };
+    }
+
+
 
   }
 }

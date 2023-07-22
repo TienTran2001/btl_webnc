@@ -108,5 +108,11 @@ namespace Ecommerce.Controllers
       var result = await _adminRepository.AdminUpdateProduct(id,  name,  description,  price,  author,  category,  quantity,  imageFile);
       return Ok(result);
     }
+
+    public async Task<IActionResult> DeleteProduct(int id)
+    {
+      var result = await _adminRepository.AdminDeleteProduct(id);
+      return Ok(result);
+    }
   }
 }

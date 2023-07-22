@@ -51,7 +51,7 @@ function loadListProduct() {
       productListHtml += '</tbody>' + '</table>';
       let productList = document.getElementById('productList');
       if (productList) productList.innerHTML = productListHtml;
-      // handleDeleteUser();
+      handleDeleteProduct();
       handleUpdateProduct();
     } else if (xhr.readyState === 4) {
     }
@@ -140,6 +140,49 @@ function handleUpdateProduct() {
 
   cancelBtn.onclick = () => {
     popupEditProduct.classList.remove('show');
+    overlay.classList.remove('show');
+  };
+}
+
+function handleDeleteProduct() {
+  const btnDelete = document.querySelectorAll('.btn-delete');
+  const overlay = document.querySelector('.overlay');
+  const cancelBtn = document.getElementById('cancelDelete');
+  const confirmationPopup = document.getElementById('confirmationPopup');
+  const confirmDelete = document.getElementById('confirmDelete');
+
+  btnDelete.forEach((item) => {
+    item.onclick = () => {
+      confirmationPopup.classList.add('show');
+      overlay.classList.add('show');
+      const productId = item.getAttribute('data-product-id');
+      confirmDelete.onclick = () => {
+        $.ajax({
+          url: '/Admin/DeleteProduct',
+          type: 'DELETE',
+          data: { id: productId },
+          success: function (result) {
+            // Xử lý thành công
+            console.log(result);
+            if (result.success == true) {
+              alert(result.message);
+              cancelBtn.click();
+              console.log(cancelBtn);
+              loadListProduct();
+            } else {
+              alert(result.message);
+            }
+          },
+          error: function () {
+            // Xử lý lỗi
+          },
+        });
+      };
+    };
+  });
+
+  cancelBtn.onclick = () => {
+    confirmationPopup.classList.remove('show');
     overlay.classList.remove('show');
   };
 }

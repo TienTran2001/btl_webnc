@@ -16,7 +16,7 @@ namespace Ecommerce.Repositories
     Task<object> AdminAddProduct(Product product, IFormFile image);
     Task<object> AdminGetProductById(int id);
     Task<object> AdminUpdateProduct(int id, string name, string description, int price, string author, string category, int quantity, IFormFile imageFile);
-
+    Task<object> AdminDeleteProduct(int id);
 
   }
 }
