@@ -1,8 +1,40 @@
-﻿@{
+﻿@model List<Product>
+@{
+    ViewData["Layout"] = "_Layout";
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+    
+   <main>
+    <div class="container">
+        <div class="book-banner"><img src="~/images/h1_hero3.jpg" alt="banner">
+            <p>The History<br/> of Phipino</p>
+        </div>
+        <div class="book-list">
+            <h2>List books</h2>
+            <div class="list-book-content">
+                
+                @foreach (var product in Model)
+                {
+                    <a class="list-book-item" href="/Product/Detail?id=@product.Id">
+                        <div>
+                            <img class="book-item-img"  src="/uploads/@product.ImagePath" alt="sách">
+                        </div>
+                        <div class="book-item-content">
+                            <h3 class="book-item-name text-truncation">@product.Name</h3>
+                            <p class="book-item-author">@product.Author</p>
+                            <div class="book-item-bottom">
+                                <span class="book-item-price">@product.Price<span>đ</span></span>
+                                <button class="add-to-cart" >Add to cart</button>
+                            </div>
+                        </div>
+                    
+                    </a>
+                }
+      
+            </div>
+        </div>
+    </div>
+
+   </main>

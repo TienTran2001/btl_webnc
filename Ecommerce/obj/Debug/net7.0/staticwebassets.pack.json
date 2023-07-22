@@ -5,6 +5,490 @@
       "PackagePath": "staticwebassets\\Ecommerce.bundle.scp.css"
     },
     {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\css\\animate.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\animate.min.css"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\css\\fontawesome-all.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\fontawesome-all.min.css"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\assets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\assets\\css\\nice-select.css"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\css\\price_rangs.css",
+      "PackagePath": "staticwebassets\\assets\\css\\price_rangs.css"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\css\\slick.css",
+      "PackagePath": "staticwebassets\\assets\\css\\slick.css"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\css\\slicknav.css",
+      "PackagePath": "staticwebassets\\assets\\css\\slicknav.css"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\css\\themify-icons.css",
+      "PackagePath": "staticwebassets\\assets\\css\\themify-icons.css"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\fonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\fonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\fonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\fonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\fonts\\fa-brands-400d41d.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400d41d.eot"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\fonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\fonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\fonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\fonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\fonts\\fa-regular-400d41d.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400d41d.eot"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\fonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\fonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\fonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\fonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\fonts\\fa-solid-900d41d.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900d41d.eot"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\fonts\\themify9f24.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themify9f24.eot"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\fonts\\themify9f24.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themify9f24.svg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\fonts\\themify9f24.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themify9f24.ttf"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\fonts\\themify9f24.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themify9f24.woff"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\fonts\\themifyd41d.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themifyd41d.eot"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\blog\\author.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\author.png"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\blog\\comment_1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\comment_1.png"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\blog\\comment_2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\comment_2.png"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\blog\\comment_3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\comment_3.png"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\blog\\single_blog_1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\single_blog_1.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\blog\\single_blog_2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\single_blog_2.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\blog\\single_blog_3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\single_blog_3.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\blog\\single_blog_4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\single_blog_4.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\blog\\single_blog_5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\single_blog_5.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\elements\\d.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\d.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\elements\\disabled-check.png",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\disabled-check.png"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\elements\\disabled-radio.png",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\disabled-radio.png"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\elements\\f1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f1.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\elements\\f2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f2.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\elements\\f3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f3.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\elements\\f4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f4.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\elements\\f5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f5.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\elements\\f6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f6.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\elements\\f7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f7.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\elements\\f8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f8.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\elements\\g1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g1.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\elements\\g2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g2.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\elements\\g3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g3.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\elements\\g4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g4.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\elements\\g5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g5.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\elements\\g6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g6.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\elements\\g7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g7.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\elements\\g8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g8.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\elements\\primary-check.png",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\primary-check.png"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\elements\\primary-radio.png",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\primary-radio.png"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\elements\\success-check.png",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\success-check.png"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\elements\\success-radio.png",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\success-radio.png"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\gallery\\ad.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\ad.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\gallery\\best-books1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\best-books1.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\gallery\\best_selling1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\best_selling1.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\gallery\\best_selling2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\best_selling2.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\gallery\\best_selling3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\best_selling3.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\gallery\\best_selling4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\best_selling4.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\gallery\\best_selling5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\best_selling5.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\gallery\\best_selling6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\best_selling6.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\gallery\\best_selling7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\best_selling7.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\gallery\\best_selling8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\best_selling8.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\gallery\\best_selling9.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\best_selling9.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\gallery\\card.html",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\card.html"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\hero\\h1_hero.html",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\h1_hero.html"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\hero\\h1_hero1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\h1_hero1.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\hero\\h1_hero2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\h1_hero2.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\hero\\h1_hero3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\h1_hero3.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\hero\\h2_hero1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\h2_hero1.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\hero\\h2_hero2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\hero\\h2_hero2.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\icon\\cart.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\cart.svg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\icon\\favicon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\favicon.png"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\icon\\logo.html",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\logo.html"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\logo\\logo2_footer.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\logo2_footer.png"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\post\\next.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\next.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\post\\post_1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_1.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\post\\post_10.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_10.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\post\\post_2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_2.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\post\\post_3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_3.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\post\\post_4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_4.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\post\\post_5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_5.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\post\\post_6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_6.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\post\\post_7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_7.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\post\\post_8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_8.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\post\\post_9.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_9.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\img\\post\\preview.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\preview.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\js\\contact.js",
+      "PackagePath": "staticwebassets\\assets\\js\\contact.js"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\js\\jquery.ajaxchimp.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.ajaxchimp.min.js"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\js\\jquery.counterup.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.counterup.min.js"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\js\\jquery.form.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.form.js"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\js\\jquery.magnific-popup.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.magnific-popup.js"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\js\\jquery.nice-select.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.nice-select.min.js"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\js\\jquery.slicknav.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.slicknav.min.js"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\js\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\js\\mail-script.js",
+      "PackagePath": "staticwebassets\\assets\\js\\mail-script.js"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\js\\plugins.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins.js"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\popper.min.js"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\js\\price_rangs.js",
+      "PackagePath": "staticwebassets\\assets\\js\\price_rangs.js"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\js\\slick.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\slick.min.js"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\js\\vendor\\jquery-1.12.4.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\jquery-1.12.4.min.js"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\js\\vendor\\modernizr-3.5.0.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\modernizr-3.5.0.min.js"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\js\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\waypoints.min.js"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\assets\\js\\wow.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\wow.min.js"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\css\\Home\\index.css",
+      "PackagePath": "staticwebassets\\css\\Home\\index.css"
+    },
+    {
       "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\css\\aos.css",
       "PackagePath": "staticwebassets\\css\\aos.css"
     },
@@ -99,6 +583,10 @@
     {
       "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\fonts\\icomoon\\style.css",
       "PackagePath": "staticwebassets\\fonts\\icomoon\\style.css"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\images\\h1_hero3.jpg",
+      "PackagePath": "staticwebassets\\images\\h1_hero3.jpg"
     },
     {
       "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\js\\deleteUser.js",
@@ -345,24 +833,32 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\uploads\\26ba3ab0-ff85-401e-996d-5975105f14db.jpg",
-      "PackagePath": "staticwebassets\\uploads\\26ba3ab0-ff85-401e-996d-5975105f14db.jpg"
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\uploads\\034717b3-ce0b-4287-b55d-a4ee83465ab4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\034717b3-ce0b-4287-b55d-a4ee83465ab4.jpg"
     },
     {
       "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\uploads\\296f3264-7191-469d-a039-e0632cda5599.jpg",
       "PackagePath": "staticwebassets\\uploads\\296f3264-7191-469d-a039-e0632cda5599.jpg"
     },
     {
-      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\uploads\\2aeb8f94-00fa-487e-a4e0-1bbb260eff20.jpg",
-      "PackagePath": "staticwebassets\\uploads\\2aeb8f94-00fa-487e-a4e0-1bbb260eff20.jpg"
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\uploads\\4cb61ac7-5b2f-4469-a95c-03b531555e8f.jpg",
+      "PackagePath": "staticwebassets\\uploads\\4cb61ac7-5b2f-4469-a95c-03b531555e8f.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\uploads\\75564f34-ba1b-4421-9985-e6f2bee5c2a1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\75564f34-ba1b-4421-9985-e6f2bee5c2a1.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\uploads\\9e6e350f-2f3c-43f1-87d8-154129bb17ca.jpg",
+      "PackagePath": "staticwebassets\\uploads\\9e6e350f-2f3c-43f1-87d8-154129bb17ca.jpg"
     },
     {
       "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\uploads\\c1d57ddc-99d9-4a49-a2f1-960ed8a8661c.jpg",
       "PackagePath": "staticwebassets\\uploads\\c1d57ddc-99d9-4a49-a2f1-960ed8a8661c.jpg"
     },
     {
-      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\uploads\\f7feb551-ce25-4735-938d-23e2eccb1918.jpg",
-      "PackagePath": "staticwebassets\\uploads\\f7feb551-ce25-4735-938d-23e2eccb1918.jpg"
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\uploads\\f93e691e-7099-44f2-aa6b-79b477ac688a.jpg",
+      "PackagePath": "staticwebassets\\uploads\\f93e691e-7099-44f2-aa6b-79b477ac688a.jpg"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Ecommerce.Microsoft.AspNetCore.StaticWebAssets.props",

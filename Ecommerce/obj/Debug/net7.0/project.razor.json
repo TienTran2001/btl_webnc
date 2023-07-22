@@ -18680,6 +18680,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "e:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\Views\\Product\\Detail.cshtml",
+      "TargetPath": "Views\\Product\\Detail.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "e:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"

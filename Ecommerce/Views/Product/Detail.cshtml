@@ -1,0 +1,24 @@
+@model Product
+@{
+    ViewData["Layout"] ="_Layout";
+    ViewData["Title"] = "Book Detail";
+
+}
+
+<main>
+  <div class="book-detail">
+    <div class="book-detail-img"><img src="/uploads/@Model.ImagePath" alt="sách" ></div>
+    <div class="book-detail-content">
+      <h3 class="book-detail-name ">@Model.Name</h3>
+      <p class="book-detail-author">by @Model.Author</p>
+      <div class="book-detail-bottom">
+          <p class="book-detail-price">@string.Format("{0:N0} đ", Model.Price).Replace(",", ".")</p>
+          <button class="add-detail-cart" >Add to cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="book-detail-decription">
+    <div>Decription</div>
+    <p>@Model.Description</p>
+  </div>
+</main>

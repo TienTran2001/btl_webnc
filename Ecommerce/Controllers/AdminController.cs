@@ -93,7 +93,7 @@ namespace Ecommerce.Controllers
     {
       //if (!ModelState.IsValid) { return View(product); }
       var result = await _adminRepository.AdminAddProduct(product, image);
-      return Ok(result);
+      return RedirectToAction("Products", "Dashboard");
     }
 
     public async Task<IActionResult> GetProductById(int id)
