@@ -1,4 +1,5 @@
-﻿using Ecommerce.Repositories;
+﻿using Ecommerce.Models;
+using Ecommerce.Repositories;
 using Ecommerce.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -11,6 +12,8 @@ namespace Ecommerce.Controllers
   {
 
     private readonly IAdminRepository _adminRepository;
+
+
     public AdminController(IAdminRepository adminRepository)
     {
       _adminRepository = adminRepository;
@@ -21,6 +24,7 @@ namespace Ecommerce.Controllers
     {
       return View();
     }
+
 
     
     [HttpGet]
@@ -69,5 +73,40 @@ namespace Ecommerce.Controllers
       return Ok(result);
     }
 
+
+    /* Product */
+
+    public async Task<IActionResult> GetAllProducts()
+    {
+      var result = await _adminRepository.AdminGetAllProduct();
+      return Ok(result);
+    }
+
+
+    public IActionResult AddProduct ()
+    {
+      return View();
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> AddProduct(Product product, IFormFile image)
+    {
+      //if (!ModelState.IsValid) { return View(product); }
+      var result = await _adminRepository.AdminAddProduct(product, image);
+      return Ok(result);
+    }
+
+    public async Task<IActionResult> GetProductById(int id)
+    {
+      var result = await _adminRepository.AdminGetProductById(id);
+
+      return Ok(result);
+    }
+
+    public async Task<IActionResult> UpdateProduct(int id, string name, string description, int price, string author, string category, int quantity, IFormFile imageFile)
+    {
+      var result = await _adminRepository.AdminUpdateProduct(id,  name,  description,  price,  author,  category,  quantity,  imageFile);
+      return Ok(result);
+    }
   }
 }

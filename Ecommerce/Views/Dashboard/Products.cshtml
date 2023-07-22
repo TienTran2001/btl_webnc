@@ -1,0 +1,69 @@
+
+
+@{
+    Layout = "_AdminLayout";
+    ViewData["title"] = "Products";
+}
+
+<h2 class="dashboard-heading">Book List</h2>      
+<div class="dashboard-container-btn">
+    <a class="dasboard-btn-create" href="/admin/AddProduct">
+       <i class="bi bi-plus"></i> <span>Create Product</span>
+    </a>
+</div>
+<section class="" id='productList'>
+                   
+</section>
+<div class="overlay"></div>
+<div id="confirmationPopup" class="confirmation-popup">
+  <p>Are you sure you want to delete this user?</p>
+  <div class="confirmation-popup-action">
+    <button id="confirmDelete" class="btn btn-danger">Confirm</button>
+    <button id="cancelDelete" class="btn">Cancel</button>
+  </div>
+</div>
+
+<div id="popupEdit" class="popup-edit">
+  <p>Edit product</p>
+  <div class="confirmation-popup-action">
+    <div class='container'>
+      <div class="form-group">
+          <label>Name</label>
+          <input type="text" class="input update-name" />
+          <span class="text-danger" ></span>
+      </div>
+      <div class="form-group">
+          <label>Image*</label>        
+          <input type="file" class="form-control update-image input" name="image"  accept=".png, .jpg" />
+          <span class="text-danger"></span>
+      </div>
+      <div class="form-group">
+          <label>Description</label>
+          <input type="text" class="input update-description" />
+          <span class="text-danger" ></span>
+      </div>
+      <div class="form-group">
+          <label>Price</label>
+          <input type="number" class="form-control update-price input" />
+          <span class="text-danger" ></span>
+      </div>
+      <div class="form-group">
+          <label>Author</label>
+          <input type="text" class="form-control update-author input" />
+          <span class="text-danger" ></span>
+      </div>
+      <div class="form-group">
+          <label>Category</label>
+          <input type="text" class="form-control update-category input" />
+          <span class="text-danger" ></span>
+      </div>
+      <div class="form-group">
+          <label>Quantity</label>
+          <input type="number" class="form-control update-quantity input" />
+          <span class="text-danger" ></span>
+      </div>
+       
+      <button id="confirmUpdate" class="btn btn-danger">Confirm</button>
+      <button id="cancelUpdateProduct" class="btn">Cancel</button>
+  </div>
+</div>

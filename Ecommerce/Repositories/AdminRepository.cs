@@ -14,11 +14,16 @@ namespace Ecommerce.Repositories
     private readonly UserManager<User> _userManager;
     private readonly RoleManager<IdentityRole> _roleManager;
 
-    public AdminRepository(SignInManager<User> signInManager, UserManager<User> userManager, RoleManager<IdentityRole> roleManager)
+    private readonly EcommerceDataContext _context;
+    private readonly IWebHostEnvironment _hostingEnvironment;
+
+    public AdminRepository(SignInManager<User> signInManager, UserManager<User> userManager, RoleManager<IdentityRole> roleManager, EcommerceDataContext context, IWebHostEnvironment hostingEnvironment)
     {
       _signInManager = signInManager;
       _userManager = userManager;
       _roleManager = roleManager;
+      _context = context;
+      _hostingEnvironment = hostingEnvironment;
     }
 
     public async Task<List<User>> AdminGetListUsersAsync()
@@ -190,6 +195,118 @@ namespace Ecommerce.Repositories
         users
       };
     }
+
+
+    /* Product */
+    public async Task<object> AdminGetAllProduct()
+    {
+      var products = await _context.Products.ToListAsync();
+      if (products == null)
+      {
+        return new
+        {
+          success = false,
+          message = "Not found"
+        };
+      }
+      return new
+      {
+        success = true,
+        products 
+      };
+    }
+
+    public async Task<object> AdminAddProduct(Product product, IFormFile image)
+    {
+      if (image != null && image.Length > 0)
+      {
+        await _context.Products.AddAsync(product);
+        await _context.SaveChangesAsync();
+
+
+        var imagePath = Path.Combine(_hostingEnvironment.WebRootPath, "uploads");
+        var fileName = Guid.NewGuid().ToString() + Path.GetExtension(image.FileName);
+        var filePath = Path.Combine(imagePath, fileName);
+
+        using (var fileStream = new FileStream(filePath, FileMode.Create))
+        {
+          await image.CopyToAsync(fileStream);
+        }
+
+        // Lưu đường dẫn ảnh vào database
+        product.ImagePath = fileName;
+        await _context.SaveChangesAsync();
+      }
+
+      return new 
+      { 
+        success = true,
+        product
+      };
+    }
+
+    public async Task<object> AdminGetProductById(int id)
+    {
+      var product = await _context.Products.FirstOrDefaultAsync(p => p.Id == id);
+
+      if (product == null)
+      {
+        return new
+        {
+          success = false,
+          message = "User not found!"
+        };
+      }
+      return new
+      {
+        success = 1,
+        product
+      };
+    }
+
+    public async Task<object> AdminUpdateProduct(int id, string name, string description, int price, string author, string category, int quantity, IFormFile imageFile)
+    {
+
+      var product = await _context.Products.FirstOrDefaultAsync(p => p.Id == id);
+      if (product == null)
+      {
+        return new
+        {
+          success = false,
+          message = "Product not found"
+        };
+      }
+
+      product.Name = name;
+      product.Description = description;
+      product.Price = price;
+      product.Author = author;
+      product.Category = category;
+      product.Quantity = quantity;
+
+      if(imageFile != null)
+      {
+        var imagePath = Path.Combine(_hostingEnvironment.WebRootPath, "uploads");
+        var fileName = Guid.NewGuid().ToString() + Path.GetExtension(imageFile.FileName);
+        var filePath = Path.Combine(imagePath, fileName);
+
+        using (var fileStream = new FileStream(filePath, FileMode.Create))
+        {
+          await imageFile.CopyToAsync(fileStream);
+        }
+        product.ImagePath = fileName;
+      }
+
+      await _context.SaveChangesAsync();
+
+      return new
+      {
+        success = true,
+        product
+      };
+    }
+
+
 
   }
 }

@@ -2,6 +2,7 @@ using Ecommerce.Models;
 using Ecommerce.Repositories;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,10 @@ builder.Services.AddDbContext<DataContext>(options =>
 builder.Services.AddIdentity<User, IdentityRole>()
                 .AddEntityFrameworkStores<DataContext>()
                 .AddDefaultTokenProviders();
+
+// for dbContext
+builder.Services.AddDbContext<EcommerceDataContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MVCEcommerceContext")));
 
 builder.Services.ConfigureApplicationCookie(option => option.LoginPath = "/User/Login");
 

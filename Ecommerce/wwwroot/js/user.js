@@ -40,7 +40,7 @@ function loadListUser() {
       });
       userListHtml += '</tbody>' + '</table>';
       let userList = document.getElementById('userList');
-      userList.innerHTML = userListHtml;
+      if (userList) userList.innerHTML = userListHtml;
       handleDeleteUser();
       handleUpdateUser();
     } else if (xhr.readyState === 4) {
@@ -170,7 +170,7 @@ function handleUpdateUser() {
 }
 
 // search
-function handleSearchUser() {
+function handleSearch(search) {
   const searchInput = document.querySelector('.search');
   let debounceTimeout;
 
@@ -184,7 +184,7 @@ function handleSearchUser() {
       if (searchTerm == '') {
         loadListUser();
       } else {
-        searchUsersByUsername(searchTerm);
+        search(searchTerm);
       }
     }, 500);
   });
@@ -245,7 +245,8 @@ function searchUsersByUsername(searchTerm) {
 function app() {
   $(document).ready(function () {
     loadListUser();
-    handleSearchUser();
+    handleSearch(searchUsersByUsername);
+    // handleSearch(searchProductByName);
   });
 }
 

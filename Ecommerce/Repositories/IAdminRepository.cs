@@ -11,5 +11,12 @@ namespace Ecommerce.Repositories
     Task<object> AdminGetUserById(string id);
     Task<object> AdminUpdateUser(string id, string firstName, string lastName, string email, string username);
     Task<object> AdminSearchUserByUsername(string username);
+    
+    Task<object> AdminGetAllProduct();
+    Task<object> AdminAddProduct(Product product, IFormFile image);
+    Task<object> AdminGetProductById(int id);
+    Task<object> AdminUpdateProduct(int id, string name, string description, int price, string author, string category, int quantity, IFormFile imageFile);
+
+
   }
 }
