@@ -17,20 +17,20 @@
                 
                 @foreach (var product in Model)
                 {
-                    <a class="list-book-item" href="/Product/Detail?id=@product.Id">
+                    <div class="list-book-item" >
                         <div>
                             <img class="book-item-img"  src="/uploads/@product.ImagePath" alt="sách">
                         </div>
                         <div class="book-item-content">
-                            <h3 class="book-item-name text-truncation">@product.Name</h3>
+                            <a href="/Product/Detail?id=@product.Id" class="book-item-name text-truncation">@product.Name</a>
                             <p class="book-item-author">@product.Author</p>
                             <div class="book-item-bottom">
                                 <span class="book-item-price">@product.Price<span>đ</span></span>
-                                <button class="add-to-cart" >Add to cart</button>
+                                @* <button >Add to cart</button> *@
                             </div>
                         </div>
                     
-                    </a>
+                    </div>
                 }
       
             </div>

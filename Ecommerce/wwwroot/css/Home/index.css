@@ -17,9 +17,9 @@
 .list-book-item {
   border: 1px solid #ccc;
   border-radius: 5px;
-  cursor: pointer;
   color: #ff1616;
   transition: 1s linear all;
+  display: inline-block;
 }
 
 .list-book-item:hover {
@@ -30,6 +30,7 @@
 .book-item-price {
   color: #ff1616;
 }
+
 .book-item-content {
   padding: 15px;
   display: flex;
@@ -51,6 +52,11 @@
   margin-top: 16px;
   font-size: 18px;
   font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+.book-item-name:hover {
+  color: #000;
 }
 
 .text-truncation {

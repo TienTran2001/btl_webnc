@@ -44,6 +44,7 @@
     <link rel="stylesheet" href="~/css/base/reset.css" />
     <link rel="stylesheet" href="~/css/Home/index.css" />
     <link rel="stylesheet" href="~/css/Detail/detail.css" />
+    <link rel="stylesheet" href="~/css/Home/cartitem.css" />
 </head>
 <body>
     <header>
@@ -58,9 +59,8 @@
                   >
                     <div class="header-info-left d-flex align-items-center">
                       <div class="logo">
-                        <a href="index-2.html"
-                          ><img src="assets/img/logo/logo.png" alt=""
-                        /></a>
+                        <a asp-action="Index" asp-controller="Home"
+                          >EShop</a>
                       </div>
 
                       <form action="#" class="form-box">
@@ -78,15 +78,15 @@
                       <ul>
                         @* <li><a href="#">FAQ</a></li>
                         <li><a href="#">Track Order</a></li> *@
-                        <li class="shopping-card">
-                          <a href="cart.html"
-                            ><img src="assets/img/icon/cart.svg" alt=""
-                          /></a>
+                        <li class="cart-count" >
+                          <a asp-action="Index" asp-controller="CartItem"
+                            ><i class="bi bi-cart cart-icon"></i></a>
+                          <span id="cartCount"></span>
                         </li>
                         @if (!string.IsNullOrEmpty(User.Identity.Name))
                         {
                             <li>
-                                <a href="Dashboard/Display"><span class="icon icon-person"> @User.Identity.Name</span></a>
+                                <a asp-action="Display" asp-controller="Dashboard"><span class="username"> @User.Identity.Name</span></a>
                             </li>
                         } else {
                             <li>
@@ -124,13 +124,13 @@
                             @if (!string.IsNullOrEmpty(User.Identity.Name))
                             {
                                 @if(User.IsInRole("admin")) {
-                                   <li><a href="Dashboard/Display"><span class="icon icon-person">Dashboard</span></a></li> 
+                                   <li><a asp-action="Display" asp-controller="Dashboard"><span class="icon icon-person">Dashboard</span></a></li> 
                                 }
                                  <li>
                             </li>
                                 <li><a href="/User/Logout"><i class="bi bi-box-arrow-in-right"></i> Logout</a></li>
                             }
-                            <li><a href="cart.html">Cart</a></li>
+                            <li><a asp-action="Index" asp-controller="CartItem">Cart</a></li>
                             
                             
                           </ul>
@@ -167,9 +167,9 @@
                 <div class="single-footer-caption mb-50">
                   <div class="single-footer-caption mb-30">
                     <div class="footer-logo mb-25">
-                      <a href="index-2.html"
-                        ><img src="assets/img/logo/logo2_footer.png" alt=""
-                      /></a>
+                      <a
+                        >EShop
+                      </a>
                     </div>
                     <div class="footer-tittle">
                       <div class="footer-pera">
@@ -180,14 +180,7 @@
                       </div>
                     </div>
 
-                    <div class="footer-social">
-                      <a href="https://bit.ly/sai4ull"
-                        ><i class="fab fa-facebook"></i
-                      ></a>
-                      <a href="#"><i class="fab fa-instagram"></i></a>
-                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                      <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
+                   
                   </div>
                 </div>
               </div>
@@ -200,8 +193,7 @@
                     <ul class="mb-20">
                       <li><a href="#">Home</a></li>
                       <li><a href="#">About Us</a></li>
-                      <li><a href="#">FAQs</a></li>
-                      <li><a href="#">Blog</a></li>
+                     
                       <li><a href="#">Contact</a></li>
                     </ul>
                   </div>
@@ -221,16 +213,8 @@
                     <script>
                       document.write(new Date().getFullYear());
                     </script>
-                    All rights reserved | This template is made with
-                    <i class="fa fa-heart color-danger" aria-hidden="true"></i>
-                    by
-                    <a
-                      href="https://colorlib.com/"
-                      style="color: black"
-                      target="_blank"
-                      rel="nofollow noopener"
-                      >Colorlib</a
-                    >
+                    
+                   
                   </div>
                 </div>
               </div>
@@ -244,6 +228,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+     <script src="~/js/cartitem.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

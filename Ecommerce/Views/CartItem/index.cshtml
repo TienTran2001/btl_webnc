@@ -1,0 +1,36 @@
+@{
+  ViewData["Layout"] = "_Layout";
+  ViewData["title"] = "Cart";
+}
+
+<main>
+    <div class="book-banner"><img src="~/images/h2_hero2.jpg" alt="banner">
+            <p>Cart</p>
+    </div>
+    <div id="cartList">
+      <table class="cart-table">
+          <thead>
+              <tr>
+                  <th>Image</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Total Price</th>
+              </tr>
+          </thead>
+          <tbody>
+              <!-- Place your cart items data here using a loop -->
+              <!-- Example: -->
+              <tr>
+                  <td class="cart-img"><img src="https://salt.tikicdn.com/cache/750x750/ts/product/b4/4f/06/24839081e07c36ec46f43be6e1e47909.jpg.webp" alt=""></td>
+                  <td class="cart-name">Product A</td>
+                  <td class="cart-price">$50</td>
+                  <td class="cart-quantity"><input type="number" value="1" min="1"></td>
+                  <td class="cart-item-total">$100</td>
+              </tr>
+            
+              <!-- End of example -->
+          </tbody>
+      </table>
+    </div>
+</main>

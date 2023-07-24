@@ -31,3 +31,18 @@ body {
   font-size: 16px;
   line-height: 1;
 }
+
+.cart-icon {
+  font-size: 30px;
+}
+
+.username {
+  font-size: 22px;
+  font-weight: 500;
+}
+.footer-logo a,
+.logo a {
+  font-size: 30px;
+  color: #ff1616 !important;
+  font-weight: 600;
+}

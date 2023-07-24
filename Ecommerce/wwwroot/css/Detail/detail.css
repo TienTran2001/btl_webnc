@@ -68,3 +68,14 @@
   padding: 10px 0;
   font-size: 18px;
 }
+
+.book-detail-quantity {
+  display: block;
+  margin-bottom: 20px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  width: 100px;
+  border-radius: 20px;
+}

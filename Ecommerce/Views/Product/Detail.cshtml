@@ -13,7 +13,8 @@
       <p class="book-detail-author">by @Model.Author</p>
       <div class="book-detail-bottom">
           <p class="book-detail-price">@string.Format("{0:N0} đ", Model.Price).Replace(",", ".")</p>
-          <button class="add-detail-cart" >Add to cart</button>
+          <input class="book-detail-quantity" type="number" min=1 value="1">
+          <button class="add-detail-cart" data-product-id=@Model.Id>Add to cart</button>
       </div>
     </div>
   </div>

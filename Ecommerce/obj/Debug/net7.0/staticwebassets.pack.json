@@ -485,6 +485,14 @@
       "PackagePath": "staticwebassets\\assets\\js\\wow.min.js"
     },
     {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\css\\Detail\\detail.css",
+      "PackagePath": "staticwebassets\\css\\Detail\\detail.css"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\css\\Home\\cartitem.css",
+      "PackagePath": "staticwebassets\\css\\Home\\cartitem.css"
+    },
+    {
       "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\css\\Home\\index.css",
       "PackagePath": "staticwebassets\\css\\Home\\index.css"
     },
@@ -587,6 +595,14 @@
     {
       "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\images\\h1_hero3.jpg",
       "PackagePath": "staticwebassets\\images\\h1_hero3.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\images\\h2_hero2.jpg",
+      "PackagePath": "staticwebassets\\images\\h2_hero2.jpg"
+    },
+    {
+      "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\js\\cartitem.js",
+      "PackagePath": "staticwebassets\\js\\cartitem.js"
     },
     {
       "Id": "E:\\Workspace\\MVCProject\\Ecommerce\\Ecommerce\\wwwroot\\js\\deleteUser.js",

@@ -20,5 +20,6 @@ namespace Ecommerce.Models
     {
     }
     public DbSet<Product> Products { get; set; }
+    public DbSet<CartItem> CartItems { get; set; } 
   }
 }
